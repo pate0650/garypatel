@@ -1,0 +1,608 @@
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  . * {
+    box-sizing: border-box;
+  }
+
+  body {
+    color: black;
+    max-width: 80rem;
+    margin: 0 auto !important;
+    line-height: 1.5;
+  }
+
+  header {
+    display: block;
+    background-color: rgba(197, 94, 56, 0.925);
+  }
+
+  nav {
+    float: right;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bolder;
+
+  }
+
+  nav ul li a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    text-align: center !important;
+  }
+
+  .title img {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .bio {
+    /* margin: 2rem 5rem; */
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+  }
+
+
+  .main-pic {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .bio #main-text {
+    text-align: justify !important;
+    padding: 20px;
+    margin: 0 auto;
+    float: right;
+    font-size: 24px;
+    color: white;
+    font-style: italic;
+  }
+
+  .about_me {
+    background-color: rgb(255, 214, 137);
+  }
+
+
+  .about_me h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    align-content: center;
+  }
+
+  .about_text {
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  .about_text p {
+    padding: 1rem;
+    text-align: justify;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .about_img {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    padding: 5rem;
+    padding-bottom 0rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .about_img img {
+    height: 400px;
+    width: 300px;
+    border-radius: 20%;
+  }
+
+  .skills {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .skills h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+
+  }
+
+  .skills_para {
+    max-width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    ;
+  }
+
+  .skills_para p {
+    text-align: center;
+  }
+
+  .skills_para h4 {
+    font-size: 28px;
+    text-align: center;
+    color: aqua;
+  }
+
+  .services {
+    background-color: rgb(255, 214, 137);
+    color: red;
+  }
+
+  .service_type img {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    text-align: justify;
+  }
+
+  .service_type h3 {
+    font-weight: 800;
+    text-align: center;
+  }
+
+
+  .service_type {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .service_type p {
+    margin: 1rem;
+    padding: 1rem;
+    align-content: center;
+    text-align: justify;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    border: 3px solid black;
+    margin: 5px;
+  }
+
+
+  .contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .footer h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 38px;
+  }
+
+  .contact_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-content: center;
+    text-align: center;
+  }
+
+  .contact_text P {
+    margin: 2rem;
+  }
+
+  .copy {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(197, 94, 56, 0.925);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  form {
+    margin: 1rem;
+    background-color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    background-size: cover;
+    padding: 1rem;
+    border-radius: 2rem;
+
+  }
+
+  legend {
+    margin: 1rem;
+    font-size: 24px;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  label {
+    text-align: center;
+  }
+
+  .parent {
+    border-radius: 5px;
+    ;
+    margin: 0 1rem 0;
+  }
+
+  .child {
+    margin: 0 0 1rem 0;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media(min-width:30rem) {
+    form {
+      margin: 2rem;
+    }
+
+    legend {
+      margin: 2rem;
+      font-size: 28px;
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name email"
+        "message message"
+        "spam spam"
+        "submit submit";
+    }
+
+    .child:nth-child(1) {
+      padding: 0 1rem;
+      grid-area: name;
+    }
+
+    .child:nth-child(2) {
+      padding: 0 1rem;
+      grid-area: email;
+    }
+
+    .child:nth-child(3) {
+      grid-area: message;
+      padding: 0 1rem;
+    }
+
+    textarea {
+      width: 100%;
+    }
+
+    .child:nth-child(4) {
+      grid-area: spam;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .child:nth-child(5) {
+      grid-area: submit;
+      padding-top: 1rem;
+      text-align: center;
+    }
+  }
+
+  @media(min-width:60rem) {
+    form {
+      margin: 3rem;
+      font-size: 1.5rem;
+      max-width: 80rem;
+    }
+
+    legend {
+      font-size: 1.75rem;
+      margin: 1rem;
+      padding-top: 1rem;
+    }
+
+    .child input[type="text"] {
+      height: 3rem;
+    }
+
+    .child textarea {
+      height: 9rem;
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "name email"
+        "message message"
+        "spam spam"
+        "submit submit";
+    }
+
+    .child input[type="text"] {
+      border-radius: 2rem;
+    }
+
+    .child:nth-child(1) {
+      padding: 0 1rem;
+      grid-area: name;
+    }
+
+    .child:nth-child(2) {
+      padding: 0 1rem;
+      grid-area: email;
+    }
+
+    .child:nth-child(3) {
+      grid-area: message;
+      padding: 0 1rem;
+    }
+
+    textarea {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .child:nth-child(4) {
+      grid-area: spam;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .child:nth-child(5) {
+      grid-area: submit;
+      padding-top: 1rem;
+    }
+
+    input[type="submit"] {
+      align-items: center !important;
+      font-size: 1.5rem;
+      height: 3.5rem;
+    }
+
+  }
+
+  @media(max-width:30rem) {
+    body {
+      display: block;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    header:first-child {
+      text-align: center;
+      justify-content: center;
+    }
+
+    nav ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .about_me {
+      display: flex !important;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about_img {
+      display: none;
+    }
+
+    .service_type {
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+      align-content: center;
+      margin-left: 2rem;
+    }
+
+  }
